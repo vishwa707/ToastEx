@@ -1,7 +1,6 @@
 package com.example.toastex;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity{
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,13 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Welcome", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Button Clicked!", Toast.LENGTH_LONG).show();
             }
         });
-    }
-
-    @Override
-    public void onClick(View view) {
-
     }
 }
